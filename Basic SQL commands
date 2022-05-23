@@ -1,0 +1,29 @@
+/****** Select by price in descending order  ******/
+SELECT *
+  FROM [database].[dbo].[Offer]
+  ORDER BY SalePrice DESC
+  
+/****** Select by price in ascending order  ******/
+SELECT *
+  FROM [database].[dbo].[Offer]
+  ORDER BY SalePrice ASC
+  
+/****** Get MIN price  ******/
+SELECT MIN(SalePrice) FROM Offer
+
+/****** Get MAX price  ******/
+SELECT MAX(SalePrice) FROM Offer
+
+/****** Get AVERAGE price  ******/
+SELECT AVG(SalePrice) FROM Offer
+
+/****** SUM of sales  ******/
+SELECT SUM(SalePrice) FROM Offer
+
+/****** Number of sales  ******/
+SELECT COUNT(SalePrice) FROM Offer
+
+/****** Select by columns and order by column ascending  ******/
+SELECT City, Bulstat, Phone, Category
+FROM Clients
+ORDER BY City ASC;
