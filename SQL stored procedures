@@ -1,0 +1,6 @@
+--Procedure which find client by bulstat
+CREATE PROCEDURE FindClientByBulstat @Bulstat nvarchar(10)
+AS
+SELECT * FROM Clients WHERE Bulstat = @Bulstat
+GO
+
