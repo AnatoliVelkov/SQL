@@ -18,3 +18,8 @@ SELECT * FROM SUPPLY
 WHERE date_supply >= '1.01.2019'
  AND date_supply <= '31.12.2019'
   AND note is not null
+
+select * FROM BUSINESS_EVENT
+WHERE id_business_class IN (109, 79, 108, 206010, 404, 399)
+AND event_date >= '1.01.2024'
+AND event_date <= '31.01.2024'
