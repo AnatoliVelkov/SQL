@@ -1,0 +1,8 @@
+--Select all columns from table
+select * from SUPPLY
+
+--Select specific columns from table
+select id_supply, date_supply, supplyno from SUPPLY
+
+--Select distinct specific columns from table
+select distinct date_supply from SUPPLY
