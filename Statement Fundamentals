@@ -23,3 +23,11 @@ select * FROM BUSINESS_EVENT
 WHERE id_business_class IN (109, 79, 108, 206010, 404, 399)
 AND event_date >= '1.01.2024'
 AND event_date <= '31.01.2024'
+
+select * from BUSINESS_EVENT be
+where be.ID_BUSINESS_CLASS in (4,76,42)
+AND be.EVENT_DATE >= '1.01.2024'
+
+
+SELECT * FROM TASK_CLASS TC
+WHERE TC.ID_TASK_CLASS in (42,76)
