@@ -6,3 +6,15 @@ select id_supply, date_supply, supplyno from SUPPLY
 
 --Select distinct specific columns from table
 select distinct date_supply from SUPPLY
+
+--Select count of distincts specific columns from table
+SELECT COUNT (DISTINCT date_supply) FROM SUPPLY
+
+--Select using WHERE statement
+SELECT * FROM SUPPLY
+WHERE date_supply='24.06.2019'
+
+SELECT * FROM SUPPLY
+WHERE date_supply >= '1.01.2019'
+ AND date_supply <= '31.12.2019'
+  AND note is not null
